@@ -1,1 +1,0 @@
-Tienda la genérica from samuel's branch

@@ -1,0 +1,26 @@
+body {
+  background-color: #ffff;
+}
+.caja-primera {
+  background-color: rgb(247, 247, 247);
+  border: 5px inset #00ffed;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  z-index: 999999;
+}
+.boton-subir-archivo {
+  border: 5px inset #00ffed;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.boton-volver {
+  border: 5px inset #00ffed;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}

@@ -1,14 +1,23 @@
-const http = require('http');
+async function postData() {
+    const response = await fetch('http://localhost:9090/api/productos/save', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            buyPrice: "string",
+            id: "string",
+            iva: "string",
+            productCode: "string",
+            productName: "string",
+            sellPrice: "string",
+            supplierNit: "string"
+        })
+    });
+    const data = await response.json();
+    console.log(data);
+}
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+function parseProduct() {
+    
+}

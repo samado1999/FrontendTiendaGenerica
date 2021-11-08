@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a:link, a:visited, a:active {
+    text-decoration:none;
+}
+  
+  /* Estilo del título */
+  header {
+    background-color: rgb(73, 140, 202);
+    padding: 3px 30px;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+  }
+  
+  /* Crea dos columnas que flotan una al lado de la otra */
+  nav {
+    float: left;
+    width: 10%;  
+    text-align: center;
+    padding: 20px 20px 0px 30px;    
+  }
+
+  
+  /* Estilo del menu */
+  nav ul {
+    list-style-type: none;
+    padding: 5px;
+    background-color: rgb(176, 202, 226);
+  }
+  
+  article {
+    float: left;
+    padding: 0px 0px 0px 150px;
+    width: 90%;
+    color:rgb(73, 140, 202)
+  }  
+  
+  article.linea{
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+  }
+  
+  /* Limpia floats despues de las columnas */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Diseño responsive: hace que las dos columnas se apilen una encima de la otra en pantallas pequeñas */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }

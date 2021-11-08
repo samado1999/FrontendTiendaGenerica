@@ -1,1 +1,1 @@
-Tienda la genérica
+# FrontendTiendaGenerica

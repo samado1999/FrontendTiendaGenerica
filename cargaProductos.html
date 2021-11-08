@@ -6,15 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cargaProductos.css">
-    <title>Document</title>
+    <title>Cargue de productos</title>
 </head>
 
 <body>
+    <header>
+        <h2>Servicio de cargue masivo de productos</h2>
+    </header>
     <div class="caja-primera">
-        <p><b>CARGA DE PRODUCTOS</b></p><br>
+        <p><b>CARGA DE PRODUCTOS</b></p>
         <div class="botones">
-            <button class="boton-subir-archivo"><b>SUBIR</b></button>
-            <button class="boton-volver"><b>VOLVER</b></button>
+            <button class="boton-subir-archivo">
+                <input type="file" name="fileupload" id="fileupload" />
+            </button>
+            <button class="boton-publicar">
+                <input type="submit" value="Upload csv" name="submit" onclick="cargarArchivo()" />
+            </button>
         </div>
     </div>
 </body>
